@@ -4,6 +4,8 @@ compose = require('lodash/flow')
 
 identity = require('lodash/identity')
 property = require('lodash/property')
+toLower = require('lodash/toLower')
+maxBy = require('lodash/maxBy')
 first = require('lodash/first')
 isNull = require('lodash/isNull')
 isNaN = require('lodash/isNaN')
