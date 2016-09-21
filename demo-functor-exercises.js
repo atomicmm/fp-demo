@@ -1,16 +1,5 @@
 require('./support')
 
-const map = curry((fn, functor) => functor.map(fn))
-const maybe = curry((x, fn, m) => m.isNothing() ? x : fn(m._value))
-const either = curry((lfn, rfn, functor) => {
-    switch (functor.constructor) {
-        case Left:
-            return lfn(functor._value)
-        case Right:
-            return rfn(functor._value)
-    }
-})
-
 //ex1
 const ex1 = map(add(1))
 
